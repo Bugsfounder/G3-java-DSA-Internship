@@ -27,6 +27,6 @@ public class MethodHidingJava extends Hiding{
     }
 }
 
-// when subclass and superclass have a static method with the same name is known as method hiding.
+// method hiding --> when subclass and superclass have a static method with the same name is known as method hiding.
 // overriding --> changing an existing method of superclass in subclass with the different logic.
 // overloading --> creating multiple methods with same name, with different signatures.
