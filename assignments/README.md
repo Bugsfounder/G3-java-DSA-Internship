@@ -75,22 +75,21 @@ public static int removeDuplicates(int[] arr)
 3. <b>Leet Code</b>- Best time to buy stock - Two pointer approach
 
 ```java
-public int Maxprofit(int[] prices)
-{
-    int profit = 0, lp=0 ;
-    int maxprofit=0;
+class Solution {
+    public int maxProfit(int[] prices) {
+        int minPrice = Integer.MAX_VALUE;
+        int maxProfit = 0;
 
-    for(int hp=1; hp<prices.length;hp++){
-        if(prices[lp]< prices[hp])
-        {
-            maxprofit = prices[hp] - prices[lp];
-            profit= Math.max(profit,maxprofit);
-        }
-        else
-        {
-            lp=hp;
+        for(int price : prices){
+            if(minPrice>price){
+                minPrice = price;
+            }else{
+               maxProfit =  Math.max(price-minPrice, maxProfit);
             }
+            // maxProfit = Math.max(maxProfit, price-minPrice);
+            // minPrice = Math.min(price, minPrice);
         }
-    return profit;
+        return maxProfit;
+    }
 }
 ```
