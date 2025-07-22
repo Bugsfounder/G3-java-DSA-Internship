@@ -22,7 +22,7 @@ public class TypeSafety<T>  extends Test2{
     }
 
 
-    TypeSafety(T   course){
+    TypeSafety(T course){
         System.out.println(course);
     }
 
