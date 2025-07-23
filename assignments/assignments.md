@@ -1,6 +1,6 @@
 # Assignments
 
-### Assignment 1
+### Assignment 1 [[DONE](/assignments/assignment_1/)]
 
 1. Write a program for Type Safety
 2. Write a program for Upcasting and Downcasting
