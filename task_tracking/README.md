@@ -93,3 +93,9 @@ class Solution {
     }
 }
 ```
+
+4. Cookies
+   - Cookies are a form of consent taken from the user by a website and are stored in the browser’s cache memory.
+   - They are not hidden files, but they aren’t easily visible to regular users. Though accessible through browser tools, cookies can be misused if not managed properly, which may lead to privacy concerns.
+   - However, when used correctly, cookies are not harmful — they actually help improve user experience by remembering preferences, keeping users logged in, and personalizing the website.
+   - In short, cookies beautifully enhance how we interact with websites.
