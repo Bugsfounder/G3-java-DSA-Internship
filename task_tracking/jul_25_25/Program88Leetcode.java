@@ -21,7 +21,6 @@ public class Program88Leetcode {
             }
         }
         return nums1;
-
     }
 
     public static void main(String[] args) {
@@ -39,5 +38,7 @@ public class Program88Leetcode {
         System.out.println(lst);
 
         System.out.println(Arrays.toString(MergeArray(new int[] { 1, 2, 3, 0, 0, 0 }, 3, new int[] { 2, 5, 6 }, 3)));
+
+        System.out.println(Arrays.toString(twoSum()));
     }
 }
