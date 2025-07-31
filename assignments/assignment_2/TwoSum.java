@@ -1,19 +1,17 @@
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class TwoSum {
-    // n^2
+    // n
     public static int[] twoSum(int[] nums, int target) {
-        int i = 0, j = nums.length - 1;
-        while (i < nums.length - 1) {
-            if ((nums[i] + nums[j]) == target) {
-                return new int[] { i, j };
+        HashMap<Integer, Integer> itemsAndIndex = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            int key = target - nums[i];
+            if (itemsAndIndex.containsKey(key)) {
+                return new int[] { itemsAndIndex.get(key), i };
             }
-            if (j > 0 && i < nums.length - 1) {
-                j = nums.length - 1;
-                i++;
-            }
-            j--;
+            itemsAndIndex.put(nums[i], i);
         }
         return new int[] { -1, -1 };
     }
@@ -49,5 +47,10 @@ public class TwoSum {
         int target = 6;
         int[] res = twoSum(nums, target);
         System.out.println(Arrays.toString(res));
+
+        //        int[] res = twoSum(new int[]{2,7,11,15}, 9);
+        //        int[] res = twoSum(new int[]{3,2,4}, 6);
+        // int[] res = twoSum(new int[]{3,3}, 6);
+        // System.out.println(Arrays.toString(res));
     }
 }
