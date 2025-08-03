@@ -46,6 +46,16 @@ public class HeightChecker {
         countSort(arr, sortedArr);
 
         System.out.println(Arrays.toString(sortedArr));
+
+        // check incorrect height
+        int count = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i]!=sortedArr[i]){
+                count++;
+            }
+        }
+
+        System.out.println(count);
     }
 
 }
