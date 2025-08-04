@@ -56,6 +56,40 @@ public class HeightChecker {
         }
 
         System.out.println(count);
+
+
+        // countSort2
+        System.out.println(Arrays.toString(countSort2(new int[]{2,1,4,3,6,5,5,5}, 100)));
     }
+
+   static int[] countSort2(int[] unsortedArray, int n){
+        int[] indexArray = new  int[n+1];
+        int[] sortedArray = new int[unsortedArray.length];
+        int j = 0;
+        for(int item: unsortedArray){
+            indexArray[item]++;
+        }
+
+       for (int i = 0; i < indexArray.length; i++) {
+           if (indexArray[i]!=0){
+//                sortedArray[j] = i;
+//                j++;
+//                indexArray[i]--;
+
+               // for repeated elements
+               while (indexArray[i] > 0){
+                   sortedArray[j] = i;
+                   j++;
+                   indexArray[i]--;
+               }
+           }
+
+           if (j>unsortedArray.length){
+               break;
+           }
+       }
+
+       return sortedArray;
+   }
 
 }
