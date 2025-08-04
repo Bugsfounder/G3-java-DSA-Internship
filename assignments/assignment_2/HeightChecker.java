@@ -1,5 +1,4 @@
 package assignments.assignment_2;
-
 import java.util.Arrays;
 
 public class HeightChecker {
