@@ -15,7 +15,7 @@ public class Learn2 {
 
         System.out.println(str1==str2); // true
         System.out.println(str3==str4); // false
-        System.out.println(" " +str1==str2); // false
+        System.out.println("" +str1==str2); // false
         System.out.println(" " +(str1==str2)); // true
 
         System.out.println("str1 equals str2?? " + str1 == str2); // false
