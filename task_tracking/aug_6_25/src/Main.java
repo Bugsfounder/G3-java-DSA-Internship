@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
+// i'm applying greedy aproach here, but this aproach is not work for this question, the solution is incorrect,
+// we need to use, top-bottom DP or bottom-top DB to solve in O(n2), and it is not possible to solve this question in O(n)
 public class Main {
     // not debugged, need to verify if it is correct or not for all test cases
     public static int minimumTotal(List<List<Integer>> triangle) {
