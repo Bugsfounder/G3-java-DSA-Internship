@@ -25,9 +25,11 @@ public class HashMapExample {
 
         // updating a particular key value pair
         System.out.println(hashMap.replace(5,3));
+        System.out.println(hashMap.replace(20,3));
 
         // removing a key value pair, using key
         hashMap.remove(1);
+        hashMap.remove(20);
 
         // printing the hashMap
         System.out.println(hashMap);
