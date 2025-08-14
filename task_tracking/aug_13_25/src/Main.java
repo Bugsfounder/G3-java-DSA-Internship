@@ -2,7 +2,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Main {
-
     public int lengthOfLongestSubstring(String str) {
         int l = 0, r = 0, max = 0;
         Set<Character> ch = new HashSet<>();
