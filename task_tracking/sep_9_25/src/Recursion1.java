@@ -17,6 +17,7 @@ public class Recursion1 {
         Recursion1 rec1 = new Recursion1();
 //        rec1.Recursive1(0);
         int fib = rec1.Recursive2(6);
+
         for (int i = 0; i < fib; i++) {
             System.out.print(rec1.Recursive2(i) + " ");
         }
