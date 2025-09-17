@@ -1,4 +1,8 @@
 # G3-java-DSA-Internship
+# Food Waste and Hunger
+**Problem:** Large amounts of edible food are wasted while many people face hunger and food insecurity.
+
+**Solution:** A mobile app that connects restaurants, supermarkets, and households donating excess food with local food banks and shelters. The app can use geolocation to optimize pickup and delivery routes, minimizing waste and feeding the needy more efficiently.
 
 ### TypeSafety
 
