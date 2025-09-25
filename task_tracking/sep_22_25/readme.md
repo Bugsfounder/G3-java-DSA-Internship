@@ -8,7 +8,7 @@ The test cases are generated such that the number of unique combinations that su
 
 
 Example 1:
-```text
+```bash
 Input: candidates = [2,3,6,7], target = 7
 Output: [[2,2,3],[7]]
 Explanation:
@@ -25,7 +25,7 @@ These are the only two combinations.
 4. Do trial and error of all combinations or choose the Array Elements at any index any number of times --> target --> backtracking 
 5. If any array element == target then that element is also a combination. 
  
-```text
+```bash
 Input: candidates = [2,3,6,7], target = 7
 Output: [[2,2,3],[7]]
 Explanation:
@@ -33,3 +33,26 @@ Explanation:
 7 is a candidate, and 7 = 7.
 These are the only two combinations.
 ```
+
+
+```java
+public void TakeCombination(int index, int[] arr, int target, List<List<Integer>> comb, ){
+    
+} 
+```
+
+
+
+## Services provided by servers
+TPM Chip
+concurrent
+security
+storage
+application service
+scalability and backup
+CPUs
+Network interface
+mother board
+ports
+ram
+ECC Ram -> to reduce inconsistency 
